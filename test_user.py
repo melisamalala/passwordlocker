@@ -2,11 +2,15 @@
 
 import unittest # Importing the unittest module
 from user import User # Importing the user class
+from password import Password
+import pyperclip
 
-class TestUser(unittest.TestCase):
+class TestPassword(unittest.TestCase):
+    def setUp(self):
+        self.new_profile = Password("Melissa", "Moringa", "10")
 
     '''
-    Test class that defines test cases for the user class behaviours.
+    Test class that defines test cases for the profile behaviours.
 
     Args:
         unittest.TestCase: TestCase class that helps in creating test cases
@@ -23,7 +27,7 @@ class TestUser(unittest.TestCase):
 
     def tearDown(self):
             '''
-            tearDown method that does clean up after each test case has run.
+            tearDown method that does clean up after each test case has run
             '''
             User.user_list = []
 
