@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46455fb7-50f7-4b9b-a972-1bd447a831dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/password.py" beforeDir="false" afterPath="$PROJECT_DIR$/password.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user.py" afterDir="false" />
     </list>
@@ -24,7 +23,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="499" />
-          <entry key="Python" value="1009" />
+          <entry key="Python" value="1377" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -36,7 +35,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="499" />
-          <entry key="py" value="1009" />
+          <entry key="py" value="1377" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/password.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="150">
+              <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -73,10 +72,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <marker date="1535033693949" expanded="true" signature="507:551" ph="..." />
+                <marker date="1535049964315" expanded="true" signature="525:568" ph="..." />
               </folding>
             </state>
           </provider>
@@ -85,12 +84,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="193">
+              <caret line="107" lean-forward="true" selection-start-line="99" selection-end-line="107" />
               <folding>
                 <element signature="e#299#346#0" expanded="true" />
-                <marker date="1535034579098" expanded="true" signature="633:1212" ph="..." />
-                <marker date="1535034579098" expanded="true" signature="1753:1776" ph="..." />
+                <marker date="1535049984855" expanded="true" signature="633:1212" ph="..." />
+                <marker date="1535049984855" expanded="true" signature="1753:1776" ph="..." />
               </folding>
             </state>
           </provider>
@@ -127,8 +126,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="770" />
-    <option name="y" value="98" />
+    <option name="x" value="464" />
+    <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="699" />
   </component>
@@ -181,7 +180,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="23" width="1260" height="699" extended-state="0" />
+    <frame x="464" y="23" width="1260" height="699" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17836966" />
@@ -224,31 +223,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user.py">
+    <entry file="file://$PROJECT_DIR$/password.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <marker date="1535033693949" expanded="true" signature="507:551" ph="..." />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/password.py">
+    <entry file="file://$PROJECT_DIR$/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <marker date="1535049964315" expanded="true" signature="525:568" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="193">
+          <caret line="107" lean-forward="true" selection-start-line="99" selection-end-line="107" />
           <folding>
             <element signature="e#299#346#0" expanded="true" />
-            <marker date="1535034579098" expanded="true" signature="633:1212" ph="..." />
-            <marker date="1535034579098" expanded="true" signature="1753:1776" ph="..." />
+            <marker date="1535049984855" expanded="true" signature="633:1212" ph="..." />
+            <marker date="1535049984855" expanded="true" signature="1753:1776" ph="..." />
           </folding>
         </state>
       </provider>

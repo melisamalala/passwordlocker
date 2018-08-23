@@ -97,14 +97,14 @@ class TestUser(unittest.TestCase):
 
 
         # CONTINUE FROM HERE
-GIT
-        self.new_user.save_contact()
-        test_ = Contact("Test", "user", "moringa")  # new contact
-        test_contact.save_contact()
-
-        found_contact = Contact.find_by_account_name("0711223344")
-
-        self.assertEqual(found_contact.email, test_contact.email)
+        #
+        # self.new_user.save_user()
+        # test_user = User("Test", "user", "moringa")  # new user
+        # test_user.save_user()
+        #
+        #
+        # found_user = User.find_by_account_name("Gmail")
+        # self.assertEqual(found_user.password, test_user.password)
 
 
 if __name__ == '__main__':
