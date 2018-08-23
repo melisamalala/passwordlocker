@@ -42,7 +42,7 @@ This will be updated as the app goes on. If you find any bug please notify throu
 This site was build using Python 3.6.
  
 #Credits
-Melissa Malala |
+Melissa Malala
 
 #License
 
