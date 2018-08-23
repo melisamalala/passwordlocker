@@ -35,6 +35,20 @@ class User:
             if user.first_name == first_name:
                 return user
 
+    @classmethod
+    def user_exist(cls, first_name):
+        for user in cls.user_list:
+            if user.first_name == first_name:
+                return True
+            return False
+
+    @classmethod
+    def display_users(cls):
+        return cls.user_list
+
+
+
+
 
 
 

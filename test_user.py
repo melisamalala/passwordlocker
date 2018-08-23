@@ -1,33 +1,25 @@
 #!/usr/bin/env python3.6
 
-# import unittest
-# from user import User
-#
-#
-# def test_create_User(first_name,last_name,password):
-#     '''
-#     This is a function to create a new user
-#     '''
-#     new_user = User(first_name,last_name,password)
-#     return new_user
-#
-#
-# # def save_user
-#
-
 import unittest # Importing the unittest module
-from user import User # Importing the contact class
+from user import User # Importing the user class
 
 class TestUser(unittest.TestCase):
 
     '''
-    Test class that defines test cases for the contact class behaviours.
+    Test class that defines test cases for the user class behaviours.
 
     Args:
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
 
         # setting up here
+
+    def setUp(self):
+        '''
+        Set up method to run before each test cases.
+        '''
+        self.new_user = User("Melissa","Malala","moringa") # create user object
+
 
     def tearDown(self):
             '''
@@ -46,12 +38,6 @@ class TestUser(unittest.TestCase):
             test_user.save_user()
             self.assertEqual(len(User.user_list), 2)
 
-    def setUp(self):
-        '''
-        Set up method to run before each test cases.
-        '''
-        self.new_user = User("Melissa","Malala","moringa") # create user object
-
 
     def test_init(self):
         '''
@@ -61,15 +47,6 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.first_name,"Melissa")
         self.assertEqual(self.new_user.last_name,"Malala")
         self.assertEqual(self.new_user.password, "moringa")
-
-    # def test_create_User(first_name, last_name, password):
-    #
-    #
-    #     '''
-    #     This is a function to create a new user
-    #     '''
-    #     new_user = User(first_name,last_name,password)
-    #     return new_user
 
     def test_save_user(self):
         '''
@@ -90,21 +67,6 @@ class TestUser(unittest.TestCase):
         self.new_user.delete_user()  # Deleting a user object
         self.assertEqual(len(User.user_list), 1)
 
-    def test_find_password_by_account_name(self):
-        '''
-        test to check if we can find a password by the account name and display information
-        '''
-
-
-        # CONTINUE FROM HERE
-        #
-        # self.new_user.save_user()
-        # test_user = User("Test", "user", "moringa")  # new user
-        # test_user.save_user()
-        #
-        #
-        # found_user = User.find_by_account_name("Gmail")
-        # self.assertEqual(found_user.password, test_user.password)
 
 
 if __name__ == '__main__':

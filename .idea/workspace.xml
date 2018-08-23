@@ -23,7 +23,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="499" />
-          <entry key="Python" value="1377" />
+          <entry key="Python" value="1850" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -35,7 +35,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="499" />
-          <entry key="py" value="1377" />
+          <entry key="py" value="1850" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,10 +72,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="222">
+              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
               <folding>
-                <marker date="1535049964315" expanded="true" signature="525:568" ph="..." />
+                <marker date="1535050589803" expanded="true" signature="670:713" ph="..." />
+                <marker date="1535050589803" expanded="true" signature="770:779" ph="..." />
+                <marker date="1535050589803" expanded="true" signature="1144:1157" ph="..." />
               </folding>
             </state>
           </provider>
@@ -84,12 +86,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="107" lean-forward="true" selection-start-line="99" selection-end-line="107" />
+            <state relative-caret-position="121">
+              <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
               <folding>
                 <element signature="e#299#346#0" expanded="true" />
-                <marker date="1535049984855" expanded="true" signature="633:1212" ph="..." />
-                <marker date="1535049984855" expanded="true" signature="1753:1776" ph="..." />
+                <marker date="1535051350988" expanded="true" signature="540:1114" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="458" column="4" selection-start-line="458" selection-start-column="4" selection-end-line="458" selection-end-column="4" />
+            <state relative-caret-position="119">
+              <caret line="456" column="8" selection-start-line="456" selection-start-column="8" selection-end-line="456" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -126,7 +127,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="464" />
+    <option name="x" value="323" />
     <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="699" />
@@ -180,10 +181,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="464" y="23" width="1260" height="699" extended-state="0" />
+    <frame x="323" y="23" width="1260" height="699" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17836966" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11218725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -194,7 +195,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3294893" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3294893" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -216,13 +217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="458" column="4" selection-start-line="458" selection-start-column="4" selection-end-line="458" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/password.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -230,24 +224,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="456" column="8" selection-start-line="456" selection-start-column="8" selection-end-line="456" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="222">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding>
-            <marker date="1535049964315" expanded="true" signature="525:568" ph="..." />
+            <marker date="1535050589803" expanded="true" signature="670:713" ph="..." />
+            <marker date="1535050589803" expanded="true" signature="770:779" ph="..." />
+            <marker date="1535050589803" expanded="true" signature="1144:1157" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="107" lean-forward="true" selection-start-line="99" selection-end-line="107" />
+        <state relative-caret-position="121">
+          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
           <folding>
             <element signature="e#299#346#0" expanded="true" />
-            <marker date="1535049984855" expanded="true" signature="633:1212" ph="..." />
-            <marker date="1535049984855" expanded="true" signature="1753:1776" ph="..." />
+            <marker date="1535051350988" expanded="true" signature="540:1114" ph="..." />
           </folding>
         </state>
       </provider>
