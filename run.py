@@ -5,7 +5,7 @@ import random
 
 
 '''
-User Information
+The following functions will be used to display User Information and will be able to work on user information for example, deleting  auser, saving a a user, saving a user, creating a new user. 
 '''
 
 
@@ -75,8 +75,9 @@ def copy_password(number):
 
 
 """
-Accounts and Passwords
-"""
+The following functions will be used to action on information regarding the passwords that have been generated and stored. The user will be able to create a profile. The profile will also be displayed.
+ The profile can also be saved, looked for (if it exists). 
+ """
 
 
 def create_profile(account_name, account_password, password_length):
@@ -132,7 +133,7 @@ def main():
     user_name = input()
     print("")
 
-    print(f"Hi {user_name}. So ummm.... What would you like to do?")
+    print(f"Hi {first_name} {last_name}. So ummm.... What would you like to do?")
     print("")
 
     while True:
@@ -155,12 +156,12 @@ def main():
 
             print("""
                   Did you know that we can generate a strong password for you? Use:
-                  g- to generate a password
-                  m- to set your own.
+                  generatepassword- to generate a password
+                  makepassword- to set your own.
                   """)
             pass_code = input().lower()
             print("__" * 20)
-            if pass_code == "g":
+            if pass_code == "generatepassword":
                 password_length = int(
                     input("How long do you want your password - "))
                 password = password_gen(password_length)
