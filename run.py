@@ -117,32 +117,39 @@ def main():
     print("")
 
     while True:
-        print("""Use these short codes:
-              createaccount - I wanna create a new account
-              login - Just wanna login to see my password profiles
-              logout - I'm done, log me out please!
-              exit - Gotta leave, so lets exit""")
+        print(emoji.emojize("""Use these short codes:
+             :cyclone: createaccount - I wanna create a new account!
+             :cyclone: login - Just wanna login to see my password profiles!
+             :cyclone: logout - I'm done, log me out please!
+             :cyclone: exit - Gotta leave, so lets exit!"""))
 
         short_code = input().lower()
-        print("_" * 100)
+        print(emoji.emojize
+              (" :rose: " * 20))
         if short_code == "createaccount":
-            print("New Password Locker Account")
-            print("_" * 20)
+            print(emoji.emojize(" :blue_circle: New Password Locker Account :blue_circle:"))
+            print(emoji.emojize(" :rose: " * 20))
 
-            print("Enter your first name -")
+            print(emoji.emojize(" :red_circle: Enter Your First Name :red_circle:"))
             first_name = input()
 
-            print("Enter your last name -")
+            print(emoji.emojize(" :red_circle: Enter Your Last Name :red_circle:"))
             last_name = input()
 
-            print("""
-                  Did you know that we can generate a strong password for you? Use:
-                  generatepassword- to generate a password
-                  makepassword- to set your own.
-                  """)
+            print(emoji.emojize("\n"
+                                "                 :cyclone: Did you know that we can generate a strong password for you? Use:\n"
+                                "                 :cyclone:generatepassword- to generate a password\n"
+                                "                 :cyclone: makepassword- to set your own.\n"
+                                "                  "))
             pass_code = input().lower()
-            print("__" * 20)
+            print(emoji.emojize
+                  (" :rose: " * 20))
             if pass_code == "generatepassword":
+
+                '''
+                 int means it's an integer
+                '''
+
                 password_length = int(
                     input("How long do you want your password - "))
                 password = password_gen(password_length)
@@ -159,22 +166,22 @@ def main():
             print("")
             print("Feel free to create your password profiles")
         while True:
-            print("""Use these short codes:
-                  newpassword - create password profile,
-                  displaypassword - display password locker profiles,
-                  findpassword - find a password profile,
-                  exit - exit profile list.""")
+            print(emoji.emojize("""Use these short codes:
+                  :cyclone: newpassword - create password profile,
+                  :cyclone: displaypassword - display password locker profiles,
+                  :cyclone: findpassword - find a password profile,
+                  :cyclone: exit - exit profile list."""))
             short_code = input().lower()
             print("_" * 100)
             if short_code == "newpassword":
-                print(
-                    "Quick question, which account do you want to save a password for? Eg Yahoo, Snapchat, Instagram")
+                print(emoji.emojize(
+                    " :cyclone: Quick question, which account do you want to save a password for? Eg Yahoo, Snapchat, Instagram"))
                 account_name = input()
-                print("""
-                      By the way... We can create a strong password for you. Use:
-                      generatepassword- to generate a password
-                      makepassword- to set your own.
-                      """)
+                print(emoji.emojize("""
+                     :cyclone: By the way... We can create a strong password for you. Use:
+                     :cyclone: generatepassword- to generate a password
+                     :cyclone: makepassword- to set your own.
+                      """))
                 pass_code = input().lower()
                 print("__" * 20)
                 if pass_code == "generate":
@@ -188,7 +195,7 @@ def main():
                     print("")
                     print("__" * 20)
                 else:
-                    print("Cool, please write a password of your own and we will store it (safely, of course) for you")
+                    print(emoji.emojize(" :cyclone: Cool, please write a password of your own and we will store it (safely, of course) for you"))
                     password = input()
                     password_length = len(password)
                     print("")
@@ -209,11 +216,11 @@ def main():
                         print("")
                 else:
                     print("")
-                    print("Sorry, but you don't seem to have any profiles saved yet")
+                    print(emoji.emojize(" :cyclone: Sorry, but you don't seem to have any profiles saved yet."))
                     print("")
 
             elif short_code == "findpassword":
-                print("Please enter the account you want to find the password for")
+                print(emoji.emojize(" :cyclone: Please enter the account you want to find the password for"))
 
                 account_name = input()
                 if profile_exists(account_name):
@@ -226,13 +233,13 @@ def main():
                         f"Password Length - {search_profile.password_length}")
                     print("_" * 20)
                 else:
-                    print("That profile does not exist")
+                    print(emoji.emojize("  :cyclone: That profile does not exist"))
                     print("")
 
             elif short_code == "exit":
                 print("")
                 print(
-                    "*" * 10 + " Aww, thank you for visiting Password Locker. " + "*" * 10)
+                    "*" * 10 + " Aww, thank you for visiting Password Locker. Okay, Bye! " + "*" * 10)
                 print("")
                 break
 
