@@ -4,8 +4,6 @@ from user import User
 import random
 import emoji
 
-
-
 '''
 The following functions will be used to display User Information and will be able to work on user information for example, deleting  auser, saving a a user, saving a user, creating a new user. 
 '''
@@ -18,7 +16,6 @@ def create_user(first_name, last_name, password):
     return new_user
 
 # Save users
-
 
 def save_users(user):
     """
@@ -184,7 +181,7 @@ def main():
                       """))
                 pass_code = input().lower()
                 print("__" * 20)
-                if pass_code == "generate":
+                if pass_code == "generatepassword":
 
                     password_length = int(
                         input("Quick question, how long do you want your password to be? - "))
@@ -242,7 +239,6 @@ def main():
                     "*" * 10 + " Aww, thank you for visiting Password Locker. Okay, Bye! " + "*" * 10)
                 print("")
                 break
-
 
 if __name__ == '__main__':
     main()
