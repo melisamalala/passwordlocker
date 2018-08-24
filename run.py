@@ -8,7 +8,6 @@ import random
 The following functions will be used to display User Information and will be able to work on user information for example, deleting  auser, saving a a user, saving a user, creating a new user. 
 '''
 
-
 def create_user(first_name, last_name, password):
     """
     Function to create a new user_list
@@ -25,37 +24,14 @@ def save_users(user):
     """
     user.save_user()
 
-
 # Delete user
 
 
-def del_user(user):
+def delete_user(user):
     """
     Function to delete a user
     """
     user.delete_user()
-
-
-# Finding a user
-
-
-def find_user(number):
-    """
-    Function that finds a user by number and returns the contact
-    """
-    return User.find_by_number(number)
-
-# Check if a contract exists
-
-
-def check_existing_user(number):
-    """
-    Function that checks if a user exists with that number and return Boolean
-    """
-    return User.user_exist(number)
-
-# Displaying all users
-
 
 def display_users():
     """
@@ -131,6 +107,7 @@ def password_gen(password_length):
 def main():
     print("Welcome aboard! Everyone has a name so what is yours?")
     first_name = input()
+    last_name = input()
     print("")
 
     print(f"Hi {first_name} {last_name}. So ummm.... What would you like to do?")
@@ -138,13 +115,14 @@ def main():
 
     while True:
         print("""Use these short codes:
-              createnew - I wanna create a new account
+              createaccount - I wanna create a new account
               login - Just wanna login to see my password profiles
               logout - I'm done, log me out please!
               exit - Gotta leave, so lets exit""")
+
         short_code = input().lower()
         print("_" * 100)
-        if short_code == "createnew":
+        if short_code == "createaccount":
             print("New Password Locker Account")
             print("_" * 20)
 

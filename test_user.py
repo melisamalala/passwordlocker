@@ -1,5 +1,4 @@
 #!/usr/bin/env python3.6
-
 import unittest # Importing the unittest module
 from user import User # Importing the user class
 from password import Password
@@ -8,7 +7,6 @@ import pyperclip
 class TestPassword(unittest.TestCase):
     def setUp(self):
         self.new_profile = Password("Melissa", "Moringa", "10")
-
     '''
     Test class that defines test cases for the profile behaviours.
 
@@ -39,7 +37,6 @@ class TestPassword(unittest.TestCase):
             test_user = User("Melissa", "Malala", "moringa")  # new user
             test_user.save_user()
             self.assertEqual(len(User.user_list), 2)
-
 
     def test_init(self):
         '''
