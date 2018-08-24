@@ -36,40 +36,40 @@ class Password:
         Password.password_list.append(self)
 
     @classmethod
-    def profile_exists(cls, account_name):
+    def profile_exists(Password, account_name):
         """
         Method checks if a profile exists from password_list. It takes in the
         name and returns a boolean if it finds a matching account.
         """
-        for profile in cls.password_list:
+        for profile in Password.password_list:
             if profile.account_name == account_name:
                 return True
         return False
 
     @classmethod
-    def display_profiles(cls):
+    def display_profiles(Password):
         """
         Method that will return profile list.
         """
-        return cls.password_list
+        return Password.password_list
 
     @classmethod
-    def find_by_account(cls, account_name):
+    def find_by_account(Password, account_name):
         """
         This method takes in an account name and returns the password matching
         the account.
         """
-        for profile in cls.password_list:
+        for profile in Password.password_list:
             if profile.account_name == account_name:
                 return profile
 
     @classmethod
-    def copy_password(cls, account_name):
+    def copy_password(Password, account_name):
         password_found = Password.find_by_account(account_name)
         pyperclip.copy(password_found.account_password)
 
     @classmethod
-    def password_gen(cls, password_length):
+    def password_gen(Password, password_length):
         string = "abcdefghigjkmnopqrstuvwxyz1234567890-_=+{}\|"';>./,`!@#$^&*()`'
         password = "".join(random.sample(string, int(password_length)))
         account_passsword = password

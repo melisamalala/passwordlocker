@@ -36,7 +36,7 @@ class TestPassword(unittest.TestCase):
             objects to our user list
             '''
             self.new_user.save_user()
-            test_user = User("Test", "user", "moringa")  # new user
+            test_user = User("Melissa", "Malala", "moringa")  # new user
             test_user.save_user()
             self.assertEqual(len(User.user_list), 2)
 
