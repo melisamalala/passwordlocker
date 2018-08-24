@@ -148,10 +148,10 @@ def main():
             print("_" * 20)
 
             print("Enter your first name -")
-            f_name = input()
+            first_name = input()
 
             print("Enter your last name -")
-            l_name = input()
+            last_name = input()
 
             print("""
                   Did you know that we can generate a strong password for you? Use:
@@ -169,7 +169,7 @@ def main():
                 print("We dislike hackers too, so it might be better if you write a password of your own.")
                 password = input()
 
-            save_users(create_user(f_name, l_name, password))
+            save_users(create_user(first_name, last_name, password))
 
             print("")
             print(
