@@ -1,27 +1,25 @@
 #PASSWORD LOCKER
 
-This simple Python application helps a user to store and generate passwords. It gives the user the option to generate a random password or write a new one themselves.
+This Python application helps a user to store and generate passwords as well as create account profiles. It gives the user the option to generate a random password or write a new one themselves.
 
 #Specifications
 The user can create a password profile, which records the account and password that the user enters, requests or generates. Use:
 
-np - to create a password profile. The application will automatically save your profile
+newpassword - to create a password profile. The application will automatically save your profile
 You have the option of generating a password using our random password generator or writing down one of your won.
 
-g - for using our random password generator.
-m - to write down one of your own. (The password will be saved for the user should they enter this).
+generatepassword - for using our random password generator.
+makepassword - to write down one of your own. (The password will be saved for the user should they enter this).
 You can search a password by account name. for example if your want to find your saved profile for Gmail or Yahoo.
 
-fp- for find profile
+findpassword- for find profile
 Input the name "Gmail" for Example
 The program will display your account name and the password
 
-
 A user can also display all the profiles saved.
-dp - This will be used for displaying all profiles. 
+displaypassword - This will be used for displaying all profiles. 
 All the saved profiles with the passwords that have been store by the user will be displayed.
 Use "ex" to exit the program.
-
 
 #Setup/Installation Requirements
 Clone the repository
@@ -34,7 +32,7 @@ $ python3.6 -m pip install pyperclip
 
 From the terminal navigate to the cloned project folder.
 
-open terminal and go to the project folder, run $ ./run.py
+Open terminal and go to the project folder, run $ ./run.py
 
 #Debugging
 This will be updated as the app goes on. If you find any bug please notify through this email. melissamalala@gmail.com.
