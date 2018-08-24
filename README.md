@@ -1,8 +1,8 @@
-##PASSWORD LOCKER
+## PASSWORD LOCKER
 
 This Python application helps a user to store and generate passwords as well as create account profiles. It gives the user the option to generate a random password or write a new one themselves.
 
-##Specifications
+## Specifications
 The user can create a password profile, which records the account and password that the user enters, requests or generates. Use:
 
 newpassword - to create a password profile. The application will automatically save your profile
@@ -21,7 +21,7 @@ displaypassword - This will be used for displaying all profiles.
 All the saved profiles with the passwords that have been store by the user will be displayed.
 Use "ex" to exit the program.
 
-##Setup/Installation Requirements
+## Setup/Installation Requirements
 Clone the repository
 
 Ensure you have python3.6 installed in your computer.
@@ -34,15 +34,15 @@ From the terminal navigate to the cloned project folder.
 
 Open terminal and go to the project folder, run $ ./run.py
 
-##Debugging
+## Debugging
 This will be updated as the app goes on. If you find any bug please notify through this email. melissamalala@gmail.com.
 
 This site was build using Python 3.6.
  
-##Credits
+## Credits
 Melissa Malala
 
-##License
+## License
 
 Copyright (c) [August 2018] Melissa Malala
 
