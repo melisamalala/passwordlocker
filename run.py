@@ -128,33 +128,33 @@ def password_gen(password_length):
 
 
 def main():
-    print("Hello! Welcome to your password manager. What is your name?")
+    print("Welcome aboard! Everyone has a name so what is yours?")
     user_name = input()
     print("")
 
-    print(f"Hi {user_name}. What would you like to do?")
+    print(f"Hi {user_name}. So ummm.... What would you like to do?")
     print("")
 
     while True:
         print("""Use these short codes:
-              cn - create new account
-              li - log in to your password profiles
-              lo - log out of you account
-              ex - exit profile list.""")
+              createnew - I wanna create a new account
+              login - Just wanna login to see my password profiles
+              logout - I'm done, log me out please!
+              exit - Gotta leave, so lets exit""")
         short_code = input().lower()
         print("_" * 100)
-        if short_code == "cn":
+        if short_code == "createnew":
             print("New Password Locker Account")
             print("_" * 20)
 
-            print("Enter first name -")
+            print("Enter your first name -")
             f_name = input()
 
-            print("Enter last name -")
+            print("Enter your last name -")
             l_name = input()
 
             print("""
-                  We can generate a password for you. Use:
+                  Did you know that we can generate a strong password for you? Use:
                   g- to generate a password
                   m- to set your own.
                   """)
@@ -166,60 +166,60 @@ def main():
                 password = password_gen(password_length)
                 print(f"Your new password is {password}")
             else:
-                print("Write a password of your own. We'll store it for you")
+                print("We dislike hackers too, so it might be better if you write a password of your own.")
                 password = input()
 
             save_users(create_user(f_name, l_name, password))
 
             print("")
             print(
-                f"""New account created for - {f_name} {l_name} your account password is - {password}""")
+                f"""New account created for - {first_name} {last_name} your account password is - {password}""")
             print("")
-            print("You can now create your password profiles")
+            print("Feel free to create your password profiles")
         while True:
             print("""Use these short codes:
-                  np - create password profile,
-                  dp - display password locker profiles,
-                  fp - find a password profile,
-                  ex - exit profile list.""")
+                  newpassword - create password profile,
+                  displaypassword - display password locker profiles,
+                  findpassword - find a password profile,
+                  exit - exit profile list.""")
             short_code = input().lower()
             print("_" * 100)
-            if short_code == "np":
+            if short_code == "newpassword":
                 print(
-                    "What account do you want to save a password for? Eg Gmail, Facebook, Equity")
+                    "Quick question, which account do you want to save a password for? Eg Yahoo, Snapchat, Instagram")
                 account_name = input()
                 print("""
-                      We can generate a password for you. Use:
-                      g- to generate a password
-                      m- to set your own.
+                      By the way... We can create a strong password for you. Use:
+                      generatepassword- to generate a password
+                      makepassword- to set your own.
                       """)
                 pass_code = input().lower()
                 print("__" * 20)
-                if pass_code == "g":
+                if pass_code == "generate":
 
                     password_length = int(
-                        input("How long do you want your password - "))
+                        input("Quick question, how long do you want your password to be? - "))
 
                     password = password_gen(password_length)
                     print("")
-                    print(f"Your password for {account_name} is: {password}")
+                    print(f"Super, your password for {account_name} is: {password}")
                     print("")
                     print("__" * 20)
                 else:
-                    print("Write a password of your own. We'll store it for you")
+                    print("Cool, please write a password of your own and we will store it (safely, of course) for you")
                     password = input()
                     password_length = len(password)
                     print("")
-                    print(f"Your password for {account_name} is: {password}")
+                    print(f"Super, your password for {account_name} is: {password}")
                     print("")
                     print("__" * 20)
 
                 save_profile(create_profile(
                     account_name, password, password_length))
 
-            elif short_code == "dp":
+            elif short_code == "displaypassword":
                 if display_profiles():
-                    print("Here is a list of all you profiles")
+                    print("Yay, now here is a list of all your profiles")
                     print("")
                     for profile in display_profiles():
                         print(
@@ -227,11 +227,11 @@ def main():
                         print("")
                 else:
                     print("")
-                    print("You dont seem to have any profiles saved yet")
+                    print("Sorry, but you don't seem to have any profiles saved yet")
                     print("")
 
-            elif short_code == "fp":
-                print("Enter the account you want to find the password for")
+            elif short_code == "findpassword":
+                print("Please enter the account you want to find the password for")
 
                 account_name = input()
                 if profile_exists(account_name):
@@ -247,10 +247,10 @@ def main():
                     print("That profile does not exist")
                     print("")
 
-            elif short_code == "ex":
+            elif short_code == "exit":
                 print("")
                 print(
-                    "*" * 10 + " Thank you for visiting Password Locker. Come again! Bye :) " + "*" * 10)
+                    "*" * 10 + " Aww, thank you for visiting Password Locker. " + "*" * 10)
                 print("")
                 break
 

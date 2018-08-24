@@ -16,7 +16,6 @@ class TestPassword(unittest.TestCase):
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
 
-        # setting up here
 
     def setUp(self):
         '''
@@ -30,7 +29,6 @@ class TestPassword(unittest.TestCase):
             tearDown method that does clean up after each test case has run
             '''
             User.user_list = []
-
         # other test cases here
     def test_save_multiple_user(self):
             '''
@@ -50,7 +48,7 @@ class TestPassword(unittest.TestCase):
 
         self.assertEqual(self.new_user.first_name,"Melissa")
         self.assertEqual(self.new_user.last_name,"Malala")
-        self.assertEqual(self.new_user.password, "moringa")
+        self.assertEqual(self.new_user.password, "Moringa")
 
 
     def test_save_user(self):
