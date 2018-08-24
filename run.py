@@ -2,6 +2,8 @@
 from password import Password
 from user import User
 import random
+import emoji
+
 
 
 '''
@@ -105,10 +107,11 @@ def password_gen(password_length):
 
 
 def main():
-    print("Welcome aboard! Everyone has a name so what is yours?")
+    print(emoji.emojize('Welcome aboard! :rose: Everyone has a name so what is yours? :rose:'))
     first_name = input()
     last_name = input()
     print("")
+    print(emoji.emojize('Great, thanks! :thumbs_up: :thumbs_up: :thumbs_up: :thumbs_up: :thumbs_up: :thumbs_up:'))
 
     print(f"Hi {first_name} {last_name}. So ummm.... What would you like to do?")
     print("")
