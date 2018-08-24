@@ -130,7 +130,7 @@ def password_gen(password_length):
 
 def main():
     print("Welcome aboard! Everyone has a name so what is yours?")
-    user_name = input()
+    first_name = input()
     print("")
 
     print(f"Hi {first_name} {last_name}. So ummm.... What would you like to do?")
